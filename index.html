@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BarberFlow Bot Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <strong>BarberFlow Bot</strong>
+      <div>
+        <a href="#features">Features</a>
+        <a href="#demo">Demo Flow</a>
+        <a href="https://github.com/nc0r/portfolio">GitHub</a>
+      </div>
+    </nav>
+    <section class="hero-grid">
+      <div>
+        <p class="eyebrow">Telegram automation for barber shops</p>
+        <h1>Appointments, reminders, and admin control in one Telegram bot.</h1>
+        <p class="lead">A ready-to-customize Python bot that lets clients choose a service slot, leave contact details, receive reminders, and gives the shop an admin web panel.</p>
+        <div class="actions">
+          <a class="button primary" href="https://github.com/nc0r/portfolio">View source</a>
+          <a class="button" href="#demo">See demo flow</a>
+        </div>
+      </div>
+      <div class="phone" aria-label="Telegram bot preview">
+        <div class="screen">
+          <div class="msg bot">Welcome to BarberFlow Studio. Choose what you need today.</div>
+          <div class="quick">Book appointment</div>
+          <div class="quick">Services & prices</div>
+          <div class="quick">Cancel booking</div>
+          <div class="msg user">Book appointment</div>
+          <div class="msg bot">Choose a service: Classic Haircut, Beard Trim, or Haircut + Beard.</div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="features" class="section">
+      <h2>What buyers get</h2>
+      <div class="cards">
+        <article><span>01</span><h3>Telegram booking flow</h3><p>Clients select a service, available date and time, enter their name and phone, and receive confirmation.</p></article>
+        <article><span>02</span><h3>Admin web panel</h3><p>Staff can add free slots, inspect bookings, delete slots, and manage the schedule locally.</p></article>
+        <article><span>03</span><h3>SQLite storage</h3><p>Simple local database with migrations, no external paid service required for a demo or small shop.</p></article>
+        <article><span>04</span><h3>Reminder scheduler</h3><p>Automatic reminder jobs are restored after restart and skipped if the booking was removed.</p></article>
+      </div>
+    </section>
+
+    <section id="demo" class="section split">
+      <div>
+        <h2>Demo flow</h2>
+        <ol class="timeline">
+          <li>Admin adds appointment slots in Telegram or the web panel.</li>
+          <li>Client opens the bot and checks services and prices.</li>
+          <li>Client books a haircut, beard trim, or combo slot.</li>
+          <li>Admin receives a Telegram notification with client details.</li>
+          <li>The web dashboard shows live booking and slot statistics.</li>
+        </ol>
+      </div>
+      <aside>
+        <h3>Tech stack</h3>
+        <p>Python, aiogram 3, FastAPI, SQLite, APScheduler, Jinja2.</p>
+        <h3>Security note</h3>
+        <p>The public project uses `.env.example` only. Real bot tokens, logs, databases, and virtual environments are intentionally excluded.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <span>BarberFlow Bot portfolio</span>
+    <span>Buyer-ready demo project</span>
+  </footer>
+</body>
+</html>
