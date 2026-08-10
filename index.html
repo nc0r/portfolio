@@ -1,78 +1,186 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BarberFlow Bot Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="hero">
-    <nav>
-      <strong>BarberFlow Bot</strong>
-      <div>
-        <a href="#features">Features</a>
-        <a href="#demo">Demo Flow</a>
-        <a href="https://github.com/nc0r/portfolio">GitHub</a>
-      </div>
-    </nav>
-    <section class="hero-grid">
-      <div>
-        <p class="eyebrow">Telegram automation for barber shops</p>
-        <h1>Appointments, reminders, and admin control in one Telegram bot.</h1>
-        <p class="lead">A ready-to-customize Python bot that lets clients choose a service slot, leave contact details, receive reminders, and gives the shop an admin web panel.</p>
-        <div class="actions">
-          <a class="button primary" href="https://github.com/nc0r/portfolio">View source</a>
-          <a class="button" href="#demo">See demo flow</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Interface Craft - Premium UI Design Kit</title>
+    <meta
+      name="description"
+      content="Interface Craft presents polished UI design, responsive layout systems, and production-ready frontend details for modern digital products."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <nav class="nav-shell" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Interface Craft home">
+          <span class="brand-mark" aria-hidden="true">IC</span>
+          <span>Interface Craft</span>
+        </a>
+        <div class="nav-links" aria-label="Section links">
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#author">Author</a>
         </div>
-      </div>
-      <div class="phone" aria-label="Telegram bot preview">
-        <div class="screen">
-          <div class="msg bot">Welcome to BarberFlow Studio. Choose what you need today.</div>
-          <div class="quick">Book appointment</div>
-          <div class="quick">Services & prices</div>
-          <div class="quick">Cancel booking</div>
-          <div class="msg user">Book appointment</div>
-          <div class="msg bot">Choose a service: Classic Haircut, Beard Trim, or Haircut + Beard.</div>
+        <a class="button button-small button-glow" href="#pricing">Buy Now</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-pad" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Premium UI design system</p>
+          <h1 id="hero-title">
+            Beautiful interfaces with
+            <span class="gradient-text">pixel-level precision.</span>
+          </h1>
+          <p class="hero-lede">
+            A curated showcase of visual direction, clean frontend structure,
+            and responsive details that turn simple screens into memorable
+            product experiences.
+          </p>
+          <div class="hero-actions" aria-label="Purchase actions">
+            <a class="button button-glow" href="#pricing">Get the kit</a>
+            <a class="button button-ghost" href="#features">See skills</a>
+          </div>
         </div>
-      </div>
-    </section>
-  </header>
 
-  <main>
-    <section id="features" class="section">
-      <h2>What buyers get</h2>
-      <div class="cards">
-        <article><span>01</span><h3>Telegram booking flow</h3><p>Clients select a service, available date and time, enter their name and phone, and receive confirmation.</p></article>
-        <article><span>02</span><h3>Admin web panel</h3><p>Staff can add free slots, inspect bookings, delete slots, and manage the schedule locally.</p></article>
-        <article><span>03</span><h3>SQLite storage</h3><p>Simple local database with migrations, no external paid service required for a demo or small shop.</p></article>
-        <article><span>04</span><h3>Reminder scheduler</h3><p>Automatic reminder jobs are restored after restart and skipped if the booking was removed.</p></article>
-      </div>
-    </section>
+        <div class="hero-visual" aria-label="Code editor preview">
+          <div class="editor-frame">
+            <div class="editor-topbar">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-gold"></span>
+              <span class="dot dot-green"></span>
+              <span class="file-name">renderHeroMotion.js</span>
+            </div>
+            <pre><code class="code-grid"><span class="code-line"><span class="code-muted">01</span><span><span class="code-key">const</span> mood = "neon clarity";</span></span><span class="code-line"><span class="code-muted">02</span><span></span></span><span class="code-line"><span class="code-muted">03</span><span><span class="code-key">function</span> renderHeroMotion() {</span></span><span class="code-line"><span class="code-muted">04</span><span>  layout.align("visual rhythm");</span></span><span class="code-line"><span class="code-muted">05</span><span>  glow.balance({ intensity: <span class="code-cyan">0.72</span> });</span></span><span class="code-line"><span class="code-muted">06</span><span>}</span></span></code></pre>
+          </div>
+        </div>
+      </section>
 
-    <section id="demo" class="section split">
-      <div>
-        <h2>Demo flow</h2>
-        <ol class="timeline">
-          <li>Admin adds appointment slots in Telegram or the web panel.</li>
-          <li>Client opens the bot and checks services and prices.</li>
-          <li>Client books a haircut, beard trim, or combo slot.</li>
-          <li>Admin receives a Telegram notification with client details.</li>
-          <li>The web dashboard shows live booking and slot statistics.</li>
-        </ol>
-      </div>
-      <aside>
-        <h3>Tech stack</h3>
-        <p>Python, aiogram 3, FastAPI, SQLite, APScheduler, Jinja2.</p>
-        <h3>Security note</h3>
-        <p>The public project uses `.env.example` only. Real bot tokens, logs, databases, and virtual environments are intentionally excluded.</p>
-      </aside>
-    </section>
-  </main>
+      <section class="contrast section-pad" aria-labelledby="contrast-title">
+        <div class="section-heading">
+          <p class="eyebrow">Problem and solution</p>
+          <h2 id="contrast-title">Move from rough screens to confident visual systems.</h2>
+        </div>
+        <div class="contrast-grid">
+          <article class="glass-panel">
+            <h3>Unpolished screens</h3>
+            <ul class="signal-list muted-list">
+              <li>Layouts feel assembled instead of designed</li>
+              <li>Spacing and hierarchy fight for attention</li>
+              <li>Interactions miss the small details that build trust</li>
+            </ul>
+          </article>
+          <article class="glass-panel featured-panel">
+            <h3>Designed frontend craft</h3>
+            <ul class="signal-list">
+              <li>Shape interfaces around clear visual hierarchy</li>
+              <li>Translate moodboards into responsive CSS systems</li>
+              <li>Use motion, glow, and depth with restraint</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-  <footer>
-    <span>BarberFlow Bot portfolio</span>
-    <span>Buyer-ready demo project</span>
-  </footer>
-</body>
+      <section class="features section-pad" id="features" aria-labelledby="features-title">
+        <div class="section-heading">
+          <p class="eyebrow">Signature capabilities</p>
+          <h2 id="features-title">Three skills that make interfaces feel finished.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="icon-box cursor-icon" aria-hidden="true"></div>
+            <h3>Interface Direction</h3>
+            <p>Define mood, contrast, spacing, and hierarchy before the first section ships.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon-box prompt-icon" aria-hidden="true"></div>
+            <h3>Responsive Frontend</h3>
+            <p>Build clean HTML and CSS that keeps the composition sharp on every viewport.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon-box api-icon" aria-hidden="true"></div>
+            <h3>Motion Details</h3>
+            <p>Add hover states, glow, and micro-animations that feel intentional.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="testimonials section-pad" aria-labelledby="testimonials-title">
+        <div class="section-heading">
+          <p class="eyebrow">Client reactions</p>
+          <h2 id="testimonials-title">Polish that people notice immediately.</h2>
+        </div>
+        <div class="testimonial-grid">
+          <article class="review-card">
+            <div class="avatar" aria-hidden="true">AM</div>
+            <p>"The first screen finally looked like a real product, not a template with colors changed."</p>
+            <strong>Ari M.</strong>
+          </article>
+          <article class="review-card">
+            <div class="avatar" aria-hidden="true">JK</div>
+            <p>"The layout, animation, and spacing gave the whole landing page a premium feel."</p>
+            <strong>Jordan K.</strong>
+          </article>
+          <article class="review-card">
+            <div class="avatar" aria-hidden="true">SL</div>
+            <p>"Everything felt cohesive: typography, cards, glow, and mobile behavior."</p>
+            <strong>Sofia L.</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="pricing section-pad" id="pricing" aria-labelledby="pricing-title">
+        <div class="pricing-card">
+          <span class="popular-tag">Most Popular</span>
+          <p class="eyebrow">Design package</p>
+          <h2 id="pricing-title">Interface Craft Kit</h2>
+          <p class="price">$49</p>
+          <p class="pricing-copy">
+            A compact visual system for creators who want modern pages with
+            strong hierarchy, polished components, and frontend-ready details.
+          </p>
+          <ul class="signal-list">
+            <li>Hero, feature, pricing, and author sections</li>
+            <li>Reusable glassmorphism component patterns</li>
+            <li>Responsive layout rules for desktop and mobile</li>
+            <li>Motion and hover interaction recipes</li>
+            <li>Editable color and typography tokens</li>
+          </ul>
+          <a class="button checkout-button" href="#" aria-label="Checkout for Interface Craft Kit">
+            Checkout Now
+          </a>
+        </div>
+      </section>
+
+      <section class="author section-pad" id="author" aria-labelledby="author-title">
+        <article class="author-card">
+          <div class="author-photo" aria-hidden="true">PX</div>
+          <div>
+            <p class="eyebrow">About the creator</p>
+            <h2 id="author-title">Designed by a frontend-focused visual builder.</h2>
+            <p>
+              Interface Craft is shaped by someone who pairs visual design taste
+              with production markup, turning clean ideas into screens that feel
+              deliberate, responsive, and ready to present.
+            </p>
+            <div class="social-links" aria-label="Author social links">
+              <a href="#" aria-label="Author website">&nearr;</a>
+              <a href="#" aria-label="Author GitHub">GH</a>
+              <a href="#" aria-label="Author profile">IN</a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Interface Craft. All rights reserved.</p>
+      <a href="#">Privacy</a>
+      <a class="back-to-top" href="#top" aria-label="Back to top">&uarr;</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
