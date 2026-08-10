@@ -1,6 +1,13 @@
 # Interface Craft Demo
 
-Interface Craft is a static one-page demo created to present UI design and frontend layout capabilities next to the existing BarberFlow Bot portfolio project.
+Interface Craft is a standalone static one-page demo for presenting UI design and frontend layout capabilities.
+
+This branch is intentionally separate from the BarberFlow Bot branch. It contains only the files needed for this page:
+
+- `index.html`
+- `styles.css`
+- `script.js`
+- `README.md`
 
 ## What is included
 
@@ -12,34 +19,36 @@ Interface Craft is a static one-page demo created to present UI design and front
 - CSS custom properties for quick color, spacing, and typography customization.
 - Vanilla JavaScript for smooth anchor navigation, sticky-header state, dynamic year, and checkout button feedback.
 
-## Files
-
-- `index.html` - semantic HTML structure for the demo page.
-- `styles.css` - full visual system, responsive layout, glassmorphism, shadows, and animations.
-- `script.js` - small interaction layer for scroll behavior and UI feedback.
-
 ## How to open
 
-### From GitHub Pages
+### On GitHub
 
-If GitHub Pages is enabled for this repository, open the demo at:
+Open the branch:
 
 ```text
-https://nc0r.github.io/portfolio/interface-craft/
+https://github.com/nc0r/portfolio/tree/interface-craft-page
 ```
 
-GitHub Pages should be configured to publish from the `main` branch after this branch is merged.
+Then open `index.html`, `styles.css`, or `script.js` from the file list.
+
+### With GitHub Pages
+
+If GitHub Pages is switched to publish from the `interface-craft-page` branch, the live page will be available at:
+
+```text
+https://nc0r.github.io/portfolio/
+```
 
 ### Locally
 
-Download or clone the repository, then open:
+Download this branch and open:
 
 ```text
-interface-craft/index.html
+index.html
 ```
 
 No build step is required. The page uses only HTML, CSS, and vanilla JavaScript.
 
 ## Portfolio note
 
-This page is meant to demonstrate visual taste, responsive frontend craft, component composition, glassmorphism styling, hover states, CSS animations, and clean static-page structure. It can be used as a separate portfolio case beside the BarberFlow Bot project.
+This page demonstrates visual taste, responsive frontend craft, component composition, glassmorphism styling, hover states, CSS animations, and clean static-page structure.
