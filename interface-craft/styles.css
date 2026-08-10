@@ -445,7 +445,7 @@ pre {
 .prompt-icon {
   background:
     linear-gradient(var(--cyan), var(--cyan)) 16px 18px / 26px 2px no-repeat,
-    linear-gradient(var(--indigo), var(--indigo)) 16px 29px / 18px no-repeat,
+    linear-gradient(var(--indigo), var(--indigo)) 16px 29px / 18px 2px no-repeat,
     rgba(124, 92, 255, 0.13);
 }
 
